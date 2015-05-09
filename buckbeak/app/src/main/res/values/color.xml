@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white" type="color">#FFFFFF</color>
+    <color name="black" type="color">#000000</color>
+    <color name="red" type="color">#FF0000</color>
+    <color name="blue" type ="color">#0000FF</color>
+    <color name="blackTint" type ="color">#80000000</color>
+    <color name="testBlue" type ="color">#333333</color>
+    <color name="testYellow" type ="color">#FF9900</color>
+    <!--996699,669999,336699,-->
+</resources>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Communication"
+    android:background="@drawable/photoficon">
+
+    <EditText
+        android:id="@+id/editTextTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"/>
+
+    <EditText android:hint="@string/login"
+        android:id="@+id/login"
+        android:inputType="text"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText android:hint="@string/password"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login"
+        android:padding="2dp"
+        android:layout_margin="2dp"/>
+
+    <Button android:text="@string/login"
+        android:id="@+id/loginButton"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+</RelativeLayout>

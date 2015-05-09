@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">buckbeak</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainIconDescrip">photofall main icon (old style camera and a waterfall of images)</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="submit">submit</string>
+    <string name="backgroundImageDescription">Profile background image</string>
+    <string name="cachedescrip">A image of the users cache</string>
+</resources>

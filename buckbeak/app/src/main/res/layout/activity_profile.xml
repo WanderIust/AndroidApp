@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/testBlue">
+
+    <RelativeLayout
+        android:id="@+id/topNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@color/testYellow"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@color/testYellow"/>
+        <TextView
+            android:text="WanderLust"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/profileFace"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/topNavBar"
+        android:background="@drawable/mainimage">
+
+        <photofall.wanderlust.buckbeak.RoundedProfileImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/sean"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize ="10dp"
+            android:text="   Sean Gibbons"
+            android:layout_below="@+id/profilePicture"
+            android:layout_marginTop="3dp"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/profileFace"
+        android:stretchColumns="true"
+        android:background="@color/testBlue">
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/profilenavbar"
+            android:dividerPadding="-1dp">
+
+            <TextView android:text="Hot"
+                android:gravity="bottom|center"
+                android:id="@+id/caches"
+                android:textColor="@color/white"
+                android:layout_weight="1.0"/>
+
+            <TextView android:text="Friends"
+                android:gravity="bottom|center"
+                android:id="@+id/friends"
+                android:textColor="@color/white"
+                android:layout_weight="1.0"/>
+
+            <TextView android:text="Caches"
+                android:gravity="bottom|center"
+                android:id="@+id/hot"
+                android:background="@drawable/roundednavigationbuttons"
+                android:textColor="@color/white"
+                android:layout_weight="1.0"/>
+
+            <TextView android:text="Saved"
+                android:gravity="bottom|center"
+                android:id="@+id/saved"
+                android:textColor="@color/white"
+                android:layout_weight="1.0"/>
+            </TableRow>
+        </TableLayout>
+
+    <ListView
+        android:id="@+id/mainListView"
+        android:layout_below="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listContainer"
+    android:layout_height="120dp"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="180dp"
+        android:layout_height="120dp">
+
+        <photofall.wanderlust.buckbeak.RoundedProfileImageView
+            android:id="@+id/listImageLeft"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/cachedescrip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/listTxtLeft"
+            android:layout_alignEnd="@+id/listTxtLeft"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/listTxtLeft"
+            android:textColor="@color/white"
+            android:gravity="center|bottom"
+            android:layout_alignBottom="@+id/listImageLeft"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedtextview"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+        <photofall.wanderlust.buckbeak.RoundedProfileImageView
+            android:id="@+id/listImageRight"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/cachedescrip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/listTxtRight"
+            android:layout_alignEnd="@+id/listTxtRight"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/listTxtRight"
+            android:textColor="@color/white"
+            android:gravity="center|bottom"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedtextview"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>
